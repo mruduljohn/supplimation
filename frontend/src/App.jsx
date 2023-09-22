@@ -6,17 +6,19 @@ import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <>
+    <div className='grid md:grid-cols-6'>
       <Sidebar />
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path='/' element={<Sidebar/>}> */}
-            <Route path='/sim' element={<Simulation/>}/>
-            <Route path='/mvp' element={<MVP/>}/>
-          {/* </Route> */}
-        </Routes>
-      </BrowserRouter>
-    </>
+      <div className='col-span-5 px-10 py-5'>
+        <BrowserRouter>
+          <Routes>
+            {/* <Route path='/' element={<Sidebar/>}> */}
+              <Route path='/sim' element={<Simulation/>}/>
+              <Route path='/mvp' element={<MVP/>}/>
+            {/* </Route> */}
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   )
 }
 

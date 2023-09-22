@@ -13,7 +13,7 @@ const Products = () => {
   ];
 
   return (
-    <div className="flex flex-wrap">
+    <div className="grid grid-cols-5">
       {sampleProducts.map((product) => (
         <div
           key={product.id}
