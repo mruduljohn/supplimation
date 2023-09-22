@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../components/Simulation/Products'
+import Products from '../components/MVP/Products'
 import Simulator from '../components/Simulation/Simulator'
 import PL from '../components/Simulation/PL'
 import PI from '../components/Simulation/PI'
