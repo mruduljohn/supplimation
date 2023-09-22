@@ -16,17 +16,31 @@ const Simulator = () => {
 
   return (
     <div className='md:col-span-3 px-10 py-10'>
-      <div className='text-white text-center text-4xl font-semibold'>Simulator</div>
       <div className='grid grid-cols-1 my-10'>
-        <div className='flex my-10 items-center'>
-          <label className="text-white text-2xl font-semibold">Product Price</label>
+        <div className='flex my-5 items-center'>
+          <label className="text-white text-xl font-semibold">Product Price</label>
           <input onChange={(e) => handleSliderChange(e, 'product_price')} type="range" min="450" max="1000" class="slider" id="myRange" />
-          {values && <label className='ml-3 text-white text-2xl font-bold'>{values.product_price}</label>}
+          {values && <label className='ml-3 text-white text-xl font-bold'>{values.product_price}</label>}
         </div>
-        <div className='flex my-10 items-center'>
-          <label className="text-white text-2xl font-semibold">Production Cost</label>
+        <div className='flex my-5 items-center'>
+          <label className="text-white text-xl font-semibold">Production Cost</label>
           <input onChange={(e) => handleSliderChange(e, 'production_cost')} type="range" min="1" max="450" class="slider" id="myRange" />
-          {values && <label className='ml-3 text-white text-2xl font-bold'>{values.production_cost}</label>}
+          {values && <label className='ml-3 text-white text-xl font-bold'>{values.production_cost}</label>}
+        </div>
+        <div className='flex my-5 items-center'>
+          <label className="text-white text-xl font-semibold">Production Cost</label>
+          <input onChange={(e) => handleSliderChange(e, 'production_cost')} type="range" min="1" max="450" class="slider" id="myRange" />
+          {values && <label className='ml-3 text-white text-xl font-bold'>{values.production_cost}</label>}
+        </div>
+        <div className='flex my-5 items-center'>
+          <label className="text-white text-xl font-semibold">Production Cost</label>
+          <input onChange={(e) => handleSliderChange(e, 'production_cost')} type="range" min="1" max="450" class="slider" id="myRange" />
+          {values && <label className='ml-3 text-white text-xl font-bold'>{values.production_cost}</label>}
+        </div>
+        <div className='flex my-5 items-center'>
+          <label className="text-white text-xl font-semibold">Production Cost</label>
+          <input onChange={(e) => handleSliderChange(e, 'production_cost')} type="range" min="1" max="450" class="slider" id="myRange" />
+          {values && <label className='ml-3 text-white text-xl font-bold'>{values.production_cost}</label>}
         </div>
       </div>
     </div>

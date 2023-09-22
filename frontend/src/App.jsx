@@ -11,7 +11,7 @@ function App() {
       <div className='col-span-5 px-10 py-5'>
         <BrowserRouter>
           <Routes>
-            {/* <Route path='/' element={<Sidebar/>}> */}
+              {/* <Route path='/:id' element={<Sidebar/>} /> */}
               <Route path='/sim' element={<Simulation/>}/>
               <Route path='/mvp' element={<MVP/>}/>
             {/* </Route> */}
