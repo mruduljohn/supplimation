@@ -9,9 +9,9 @@ function Simulation() {
       <div className='grid grid-cols-1'>
         <Products />
       </div>
-      <div className='grid md:grid-cols-2 grid-cols-1'>
-        <Simulator />
-        <PL />
+      <div className='grid md:grid-cols-4 grid-cols-1'>
+        <Simulator  className='md:col-span-3'/>
+        <PL className='md:col-span-1'/>
       </div>
     </div>
   )
